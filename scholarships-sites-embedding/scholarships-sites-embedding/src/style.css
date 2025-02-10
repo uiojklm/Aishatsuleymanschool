@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+body {
+    font-family: 'Cinzel', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D10000;
+    padding: 10px 20px;
+    position: relative;
+    color: #fff;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+#hamburger {
+    display: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.scholarship {
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    margin-bottom:60px;
+}
+
+.scholarship h2 {
+    color: #D10000;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.scholarship-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.scholarship-item {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    border-left: 10px solid #D10000;
+    padding: 15px;
+}
+
+.scholarship-item a {
+    text-decoration: none;
+    color: #D10000;
+    font-weight: 700;
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.scholarship-item p {
+    margin: 0;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer a {
+    color: #007bff; /* Blue color */
+    text-decoration: none; /* Remove underline if desired */
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    #hamburger {
+        display: block;
+    }
+
+    #main-nav {
+        display: none;
+    }
+
+    #main-nav.show {
+        display: block;
+        animation: slideIn 0.5s ease-out forwards;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    #main-nav {
+        display: flex;
+    }
+
+    #hamburger {
+        display: none;
+    }
+}
